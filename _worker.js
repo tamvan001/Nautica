@@ -1,12 +1,12 @@
 import { connect } from "cloudflare:sockets";
 
 // Variables
-const rootDomain = "foolvpn.me"; // Ganti dengan domain utama kalian
-const serviceName = "nautica"; // Ganti dengan nama workers kalian
-const apiKey = ""; // Ganti dengan Global API key kalian (https://dash.cloudflare.com/profile/api-tokens)
-const apiEmail = ""; // Ganti dengan email yang kalian gunakan
-const accountID = ""; // Ganti dengan Account ID kalian (https://dash.cloudflare.com -> Klik domain yang kalian gunakan)
-const zoneID = ""; // Ganti dengan Zone ID kalian (https://dash.cloudflare.com -> Klik domain yang kalian gunakan)
+const rootDomain = "yasnaya.my.id"; // Ganti dengan domain utama kalian
+const serviceName = "cf"; // Ganti dengan nama workers kalian
+const apiKey = "WIEnSiopi49OkiYyj0SrALwHriioGwhAy8Vy62IW"; // Ganti dengan Global API key kalian (https://dash.cloudflare.com/profile/api-tokens)
+const apiEmail = "miftahulfebri35@gmail.com"; // Ganti dengan email yang kalian gunakan
+const accountID = "5f41862f4cc305cffde93d292b544be3"; // Ganti dengan Account ID kalian (https://dash.cloudflare.com -> Klik domain yang kalian gunakan)
+const zoneID = "e21ad2f50005007aff3826ada4f9f196"; // Ganti dengan Zone ID kalian (https://dash.cloudflare.com -> Klik domain yang kalian gunakan)
 let isApiReady = false;
 let proxyIP = "";
 let cachedProxyList = [];
@@ -15,7 +15,7 @@ let cachedProxyList = [];
 const APP_DOMAIN = `${serviceName}.${rootDomain}`;
 const PORTS = [443, 80];
 const PROTOCOLS = ["trojan", "vless", "ss"];
-const PROXY_BANK_URL = "https://raw.githubusercontent.com/dickymuliafiqri/Nautica/refs/heads/main/proxyList.txt";
+const PROXY_BANK_URL = "https://github.com/mefhebri/Nautica/blob/main/proxyList.txt";
 const DOH_SERVER = "https://doh.dns.sb/dns-query";
 const PROXY_HEALTH_CHECK_API = "https://foolbot.azurewebsites.net/api/v1/proxy/check";
 const CONVERTER_URL =
